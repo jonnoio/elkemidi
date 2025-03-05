@@ -1,8 +1,9 @@
 /*
   5 March 2025 - this was cloned from local Elke_One_1.2.ino
-  
-  PedalTest
 
+  First job is to create a struct rather than a load of ints. It's complicated because 
+  the Elke has multiple input lines which feed into the Elke. My brain hurts already!
+  
   Will be working through this: https://tigoe.github.io/SoundExamples/
 
   Next to do - look at BassPedals1 and see how to:
@@ -19,28 +20,20 @@
 
 int keyVelocity = 100;
 
-int val = 0;      // variable to store the read value
-int lastBlackLine  = 0;      // variable to store the read value
-int lastBrownLine  = 0;      // variable to store the read value
-int lastRedLine    = 0;      // variable to store the read value
-int lastOrangeLine = 0;      // variable to store the read value
-int lastYellowLine = 0;      // variable to store the read value
-int lastGreenLine  = 0;      // variable to store the read value
-int lastBlueLine   = 0;      // variable to store the read value
-int lastPurpleLine = 0;      // variable to store the read value
+int val = 0;
 
-  int blackLine  = 0;      
-  int brownLine  = 0;
-  int redLine    = 0;
-  int orangeLine = 0;
-  int yellowLine = 0;
-  int greenLine  = 0;
-  int blueLine   = 0;
-  int purpleLine = 0;
+int blackLine  = 0;      
+int brownLine  = 0;
+int redLine    = 0;
+int orangeLine = 0;
+int yellowLine = 0;
+int greenLine  = 0;
+int blueLine   = 0;
+int purpleLine = 0;
 
-  int bottomLine = 0;
-  int middleLine = 0;
-  int topLine    = 0;
+int bottomLine = 0;
+int middleLine = 0;
+int topLine    = 0;
 
 int noteG2  = 0;
 int noteA2b = 0;
@@ -69,7 +62,6 @@ int lastNoteB2  = 0;
 int lastNoteC3  = 0;
 int lastNoteD3b = 0;
 int lastNoteD3  = 0;
-
 int lastNoteE3b = 0;
 int lastNoteE3  = 0;
 int lastNoteF3  = 0;
@@ -81,7 +73,6 @@ int lastNoteB3b = 0;
 
 int lastNoteB3  = 0;
 int lastNoteC4  = 0;
-
 
 int note = 0;
 
