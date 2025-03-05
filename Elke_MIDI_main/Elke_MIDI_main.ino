@@ -84,7 +84,8 @@ int lastNoteB3b = 0;
 int lastNoteB3  = 0;
 int lastNoteC4  = 0;
 
-int note = 0;
+//Commented this out - I *think* it's redundant, this will confirm. 
+//int note = 0;
 
 void setup() {
   Serial.begin(9600);
