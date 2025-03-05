@@ -22,6 +22,11 @@ int keyVelocity = 100;
 
 int val = 0;
 
+/* 
+  Eleven wires go into the arduino and are triggered in pairs.
+
+  Eight wires represent the notes, three wires represent the octaves. 
+*/
 int blackLine  = 0;      
 int brownLine  = 0;
 int redLine    = 0;
@@ -34,6 +39,12 @@ int purpleLine = 0;
 int bottomLine = 0;
 int middleLine = 0;
 int topLine    = 0;
+
+/* 
+  So we can read the wires then calculate and send one of 18 notes. 
+
+  We then store it for when the pedal is pressed continuously. 
+*/
 
 int noteG2  = 0;
 int noteA2b = 0;
@@ -70,7 +81,6 @@ int lastNoteG3  = 0;
 int lastNoteA3b = 0;
 int lastNoteA3  = 0;
 int lastNoteB3b = 0;
-
 int lastNoteB3  = 0;
 int lastNoteC4  = 0;
 
